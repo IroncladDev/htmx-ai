@@ -1,0 +1,170 @@
+<!<!DOCTYPE>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/public/style.css" />
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+  </head>
+  <body>
+    <div class="flex flex-col items-center gap-4">
+      <div
+        class="min-h-screen bg-gradient-to-br from-slate-500 via-sky-400 to-blue-500 w-full flex flex-col items-center justify-center"
+      >
+        <div class="flex flex-col p-4 items-center gap-4">
+          <h1 class="text-6xl font-bold text-slate-800">Introducing HTMX</h1>
+          <h2 class="text-2xl font-bold text-slate-700">
+            The next-generation open-source mid language model
+          </h2>
+
+          <a href="https://github.com/bigskysoftware/htmx" target="_blank">
+            <button class="px-6 py-3 rounded-lg bg-slate-700/50 text-white">
+              Download the Model
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="min-h-screen p-4 flex flex-col items-center justify-center">
+        <table>
+          <thead>
+            <th>Benchmark</th>
+            <th>
+              <a href="https://x.ai" target="_blank">Grok</a>
+            </th>
+            <th>
+              <a href="https://x.com/htmx_org" target="_blank">HTMX</a>
+            </th>
+            <th>
+              <a href="https://html-lang.org" target="_blank">HTML</a>
+            </th>
+            <th>
+              <a
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"
+                >WarrenBuffering
+              </a>
+            </th>
+            <th>
+              <a href="https://x.com/TheLimeagen" target="_blank">Primeagen</a>
+            </th>
+          </thead>
+          <tbody>
+            <tr>
+              <th>HumanEval</th>
+              <td>39.7%</td>
+              <td>54%</td>
+              <td>0%</td>
+              <td>mid</td>
+              <td>97%</td>
+            </tr>
+            <tr>
+              <th>mATH</th>
+              <td>15.7%</td>
+              <td
+                _="on click showModal() the #montana-modal"
+                class="hover:bg-gray-50 transition-colors"
+              >
+                ʕ •ᴥ•ʔ
+              </td>
+              <td>100%</td>
+              <td>mid</td>
+              <td>98%</td>
+            </tr>
+            <tr>
+              <th>Based</th>
+              <td
+                _="on click showModal() the #grok-based"
+                class="hover:bg-gray-50 transition-colors"
+              >
+                100%
+              </td>
+              <td>96%</td>
+              <td
+                _="on click showModal() the #html-unbased"
+                class="hover:bg-gray-50 transition-colors"
+              >
+                0%
+              </td>
+              <td>mid quite possibly</td>
+              <td
+                _="on click open('https://nextjs.org/docs/app/building-your-application/rendering/server-components') the window"
+                class="hover:bg-gray-50 transition-colors"
+              >
+                0%
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <dialog id="html-unbased" class="p-2 rounded-lg border border-gray-600">
+        <div class="flex flex-col gap-2">
+          <p>
+            HTMX may be a programming language and may have been made by the
+            most based person ever but it is not based.
+          </p>
+          <button
+            class="bg-blue-500 p-2 rounded-md hover:bg-blue-600 text-white"
+            _="on click close() the #html-unbased"
+          >
+            Okay
+          </button>
+        </div>
+      </dialog>
+
+      <dialog id="grok-based" class="p-2 rounded-lg border border-gray-600">
+        <div class="flex flex-col gap-2">
+          <img src="/public/grok-based.png" />
+          <button
+            class="bg-blue-500 p-2 rounded-md hover:bg-blue-600 text-white"
+            _="on click close() the #grok-based"
+          >
+            Cool
+          </button>
+        </div>
+      </dialog>
+
+      <dialog id="montana-modal" class="p-2 rounded-lg border border-gray-600">
+        <div class="flex flex-col gap-2">
+          <h2 class="text-2xl font-bold">Made In Montana</h2>
+          <img
+            src="https://pbs.twimg.com/media/F-2BmirbwAAgure?format=jpg&name=small"
+            alt="**********************++++++++++++===---
+****+=--==+++***++++++==-===-::::------=
++++++++++++++++====---+**#+=----========
+---======----::::::::===*%+=-===========
+===============---====--=**-:----=======
+------------------+%##=-=+#=------------
+.................:=+#@%+=+**++.......::.
+:::-=+=::::::.:..:::=%*+#%%%#+=-::::::::
+***++=++===+*==-:--.-+#**##%%*#%#=:.::::
+****++****+++#+++++++*##%%%%%%@%%#*+++++
+-*%%%#%#=---=+#-----+**###%*%%%%###+====
+-=#%%*+*=--=-=%+---+%#%%%%@%%#*%@@%*=+**
++=====-===---=%%#==*@%##%#%#*%%%@%%%#+**
+=-==========-=%%@%%@@@%%%%@%#@@%@%%##*+*
+****+=++++++====*%%%%#%%%%%%#%%%%#*%@%+*
+*#*+*##%%%##*#****+===*###%%#%%%%#+#%%*+
++=+*****************++*###%%#%@%#*+*%%#+
+=++++++++++++++**++++++#%%@%#%@%#*+*###*
++++==================*##%%%%#%%#+++*%%%+
+******++++++=======-+#%%##%%%%%*=+*#%%#*
+++++***********+++==*%%%%%##%%%#++#*#%*+
++++++++++++++*******#%%%%*=*#%%%*==*****"
+            width="300"
+            height="300"
+            class="rounded-md"
+          />
+          <button
+            _="on click close() the #montana-modal"
+            class="bg-blue-500 p-2 rounded-md hover:bg-blue-600 text-white"
+          >
+            Close
+          </button>
+        </div>
+      </dialog>
+    </div>
+  </body>
+</html>

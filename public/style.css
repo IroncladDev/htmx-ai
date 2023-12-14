@@ -1,0 +1,35 @@
+table {
+  border: solid 1px red;
+  border-radius: 8px;
+}
+
+thead {
+  border-bottom: solid 1px grey;
+}
+
+td,
+th {
+  padding: 8px;
+  border-right: solid 1px lightgrey;
+}
+
+tr td:last-child {
+  border-right: none;
+}
+
+tr {
+  border-bottom: solid 1px lightgrey;
+}
+
+tr:last-of-type {
+  border-bottom: none;
+}
+
+a {
+  text-decoration: underline !important;
+  color: #0369a1 !important;
+}
+
+dialog {
+  max-width: 400px;
+}
